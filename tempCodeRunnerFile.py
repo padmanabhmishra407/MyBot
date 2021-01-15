@@ -1,1 +1,1 @@
-import main
+ew_func(root)
