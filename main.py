@@ -3,26 +3,34 @@ import func
 import time
 import schedule
 from datetime import datetime
+import os
+import sys
 
 
 # schedule.every(5).seconds.do(func.Run)
 
 
 # schedule.every().day.at("22:04").do(func.Thursday)
+def main():
+    import urlTime
+    import func
+    import time
+    import schedule
+    from datetime import datetime
 
 
-now = datetime.now()  # current date and time
+    now = datetime.now()  # current date and time
 
-Day = now.strftime("%a")
+    Day = now.strftime("%a")
 
-Time = now.strftime("%H:%M:%S")
-print(Time)
+    Time = now.strftime("%H:%M:%S")
+    print(Time)
 
-schedule.every().monday.at("09:20").do(func.Monday)
-schedule.every().tuesday.at("09:20").do(func.Tuesday)
-schedule.every().wednesday.at("09:20").do(func.Wednesday)
-schedule.every().thursday.at("09:20").do(func.Thursday)
-schedule.every().friday.at("09:20").do(func.Friday)
+    schedule.every().monday.at("09:20").do(func.Monday)
+    schedule.every().tuesday.at("09:20").do(func.Tuesday)
+    schedule.every().wednesday.at("09:20").do(func.Wednesday)
+    schedule.every().thursday.at("09:20").do(func.Thursday)
+    schedule.every().friday.at("09:20").do(func.Friday)
 
 # def DaYs():
 #     if Day == "Mon":
@@ -33,7 +41,7 @@ schedule.every().friday.at("09:20").do(func.Friday)
 #         schedule.every().day.at("09:20").do(func.Tuesday)
 #     if Day == "Wed":
 #         print("W")
-    
+
 #         schedule.every().day.at("09:20").do(func.Wednesday)
 #     if Day == "Thu":
 #         print("TH")
@@ -52,6 +60,10 @@ schedule.every().friday.at("09:20").do(func.Friday)
 
 # schedule.every(86400).seconds.days.at("09:20").do(DaYs) # refresh every 24Hrs (no much useful)
 
-while 1:
-    schedule.run_pending()
-    time.sleep(1)
+    while 1:
+        schedule.run_pending()
+        time.sleep(1)
+
+
+# def ExitMain():
+#     sys.exit(r"D:\Projects\MyBot\main.py")

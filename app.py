@@ -1,18 +1,28 @@
-
+from Main import main
 import tkinter as tk
 from tkinter import Canvas, filedialog, Text
 import os, sys
-from subprocess import *
+# from subprocess import *
 import time
 
 root = tk.Tk()
-def OpenMain():
-    Popen('python -u "d:\Projects\MyBot\main.py')
-    time.sleep(5)
+
+# def Open():
+#     def OpenMain():
+#         main
+#     return OpenMain
+
+# OpenMain = Open()
+    # Popen('python -u "d:\Projects\MyBot\main.py')
+
 
     # filename= (r"D:\Projects\MyBot\main.py")
-def ExitMain():
-    sys.exit(r"D:\Projects\MyBot\main.py")
+def new_func():
+    def ExitMain():
+        sys.exit(r"D:\Projects\MyBot\main.py")
+    return ExitMain
+
+ExitMain = new_func()
 
 
 canvas = tk.Canvas(root, height=500, width=500)
@@ -28,7 +38,7 @@ background_label.place(relheight=1,relwidth=1)
 
 
 RunBot = tk.Button(frame, text="Run Bot", padx=10, 
-                    pady=5, fg="red", bg="black" ,command= OpenMain)
+                    pady=5, fg="red", bg="black" ,command= main)
 RunBot.place(relheight=0.05,relwidth=0.15,relx=0.10,rely=0.95)
 
 ExitBot = tk.Button(frame, text="Exit Bot", padx=10, 
