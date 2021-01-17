@@ -3,25 +3,24 @@ import func
 import time
 import schedule
 from datetime import datetime
-import os
-import sys
+import os, sys
+from guiLoop import guiLoop
 
 
 # schedule.every(5).seconds.do(func.Run)
 
 
 # schedule.every().day.at("22:04").do(func.Thursday)
-def main():
-    import urlTime
-    import func
-    import time
-    import schedule
-    from datetime import datetime
 
 
-    now = datetime.now()  # current date and time
+now = datetime.now()  # current date and time
 
-    Day = now.strftime("%a")
+Day = now.strftime("%a")
+
+@guiLoop
+def File_1():
+
+  
 
     Time = now.strftime("%H:%M:%S")
     print(Time)
