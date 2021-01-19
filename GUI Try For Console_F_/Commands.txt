@@ -1,0 +1,10 @@
+pyuic5 -x test.ui -o test.py
+
+
+pyinstaller --onefile -w script_name.py
+ "-w" for no console apps
+
+pyinstaller --onefile script_name.py
+
+
+pyinstaller --onefile -i .\snoop_dogg_PNG25.ico .\Func2.py

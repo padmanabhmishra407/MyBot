@@ -1,0 +1,7 @@
+Python's strftime directives: ("https://strftime.org/")
+Python strftime(): ("https://www.programiz.com/python-programming/datetime/strftime")
+Python Get Current time: ("https://www.programiz.com/python-programming/datetime/current-time")
+Python sleep(): How to Add Time Delays to Your Code: ("https://realpython.com/python-sleep/")
+webbrowser — Convenient Web-browser controller: ("https://docs.python.org/3/library/webbrowser.html")
+schedule: ("https://schedule.readthedocs.io/en/stable/")
+A Beginner’s Guide to the Python time Module: ("https://realpython.com/python-time-module/")

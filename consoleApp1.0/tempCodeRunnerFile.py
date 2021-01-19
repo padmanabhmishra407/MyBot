@@ -1,0 +1,1 @@
+Popen('python -u "d:\Projects\MyBot\consoleApp\Main.py"')
